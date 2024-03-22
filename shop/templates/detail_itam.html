@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Detail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .item-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            max-width: 500px;
+            margin: auto;
+        }
+        .item-detail {
+            margin-bottom: 10px;
+        }
+        .item-detail label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="item-container">
+        <h1>Item Detail</h1>
+        <div class="item-detail">
+            <label>Name:</label>
+            <span>{{ item.name }}</span>
+        </div>
+        <div class="item-detail">
+            <label>Price:</label>
+            <span>${{ item.price }}</span>
+        </div>
+        <!-- You can add more details here if needed -->
+    </div>
+</body>
+</html>
